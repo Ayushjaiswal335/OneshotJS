@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <h1>Hey Every One</h1>
+        <button id="stop">Stop</button>
+        
+</body>
+<script>
+        // setTimeout(() => {
+                
+        // }, timeout);
+
+        const greed = () =>{
+                console.log("heyy");
+        }
+        const head1 = () =>{
+                document.querySelector("h1").innerHTML = "Changing the head"
+        }
+        const changeMe = setTimeout(head1,5000)
+
+        document.querySelector("#stop").addEventListener("click",() => {
+                clearTimeout(changeMe)
+                console.log("stopp");
+        })
+        
+</script>
+</html>

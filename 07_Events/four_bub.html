@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       
+        
+</head>
+<body>
+        <h1>hello world</h1>
+        <p id="wrapper" >Hello Every one</p>
+        <!-- <button class="btn">click</button>
+        <button class="btn1">click</button> -->
+
+        <a href="https://www.facebook.com">facebook1</a>
+        <a href="https://www.facebook.com">facebook2</a>
+        <a href="https://www.facebook.com">facebook3</a>
+
+        <script>
+                // let h = document.querySelector(".btn")
+                // let h1 = document.querySelector(".btn1")
+                // let body = document.querySelector("body")
+
+                // h.addEventListener("click",e=>{
+                //         body.style.background = "red"
+                // })
+                // h1.addEventListener("click",e=>{
+                //         body.style.background = ""
+                // })
+
+                // // 
+                // const content = document.querySelector("#wrapper")
+                // content.addEventListener("click",(event)=>{
+                //         console.log(event); 
+                // })
+
+                // //
+
+                // let fb = document.querySelectorAll("a");
+                // let thridLink = fb[2]
+
+                // thridLink.addEventListener("click",e=>{
+                //         e.preventDefault();
+                //         console.log("maja aaya");
+                // })
+
+                ////
+                let myDiv =document.createElement("div")
+
+                function paraStatus(e){
+                        console.log(`para` + e.target.textContent);
+                        
+                } 
+                myDiv.addEventListener("click",paraStatus)
+
+                for (let i = 0; i < 100; i++) {
+                        let newElement =document.createElement("p")
+                        newElement.textContent=`this is my para`+ i;
+
+                        myDiv.appendChild(newElement)
+                }
+                document.body.appendChild(myDiv)
+        </script>
+</body>
+</html>
