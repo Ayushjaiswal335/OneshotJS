@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Optimize and createDocumentFragment</title>
+</head>
+<body>
+        hello World
+        <script>
+                // const t1 = performance.now();
+                // for (let i = 1; i <= 100; i++) {
+                //         let newElement = document.createElement('p')
+                //         newElement.textContent = `this is my para` + i;
+                        
+                //         document.body.appendChild(newElement);
+                // }
+                // const t2 = performance.now();
+                // console.log(t2-t1);
+                
+
+
+                // // optimize
+                // const t3 = performance.now();
+                // let myDiv = document.createElement('div')
+                // for (let i = 0; i < 100; i++) {
+                //         let newElement = document.createElement('p')
+                //         newElement.textContent = `this is my para` + 1;
+
+                //         myDiv.appendChild(newElement);
+                // }
+                // document.body.appendChild(myDiv);
+                // const t4 = performance.now();
+                // console.log(t4-t3);
+
+
+                // //
+
+                let fragment = document.createDocumentFragment();
+                for (let i = 1; i <= 100; i++) {
+                        let newElement = document.createElement('p')
+                        newElement.textContent = `this is my para` + i;
+                        
+                        fragment.appendChild(newElement);
+                }
+                document.body.appendChild(fragment) // 1 reflow, 1 repaint
+        </script>
+</body>
+</html>
