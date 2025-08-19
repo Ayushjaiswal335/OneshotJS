@@ -30,6 +30,6 @@ user1.greet = function(){
         console.log("hello");
 }
 console.log(user1);
-console.log(user1.greeting());
-console.log(user1.greeting2());
-console.log(user1.greet());
+// console.log(user1.greeting());
+// console.log(user1.greeting2());
+// console.log(user1.greet());

@@ -36,6 +36,8 @@ for (const key in programming) {
 //     console.log(programming[key]);
 }
 
+
+// **********************************************XXXX******************************
 // forech
 const coding = ["js","cpp","py","java"]
 // coding.forEach(function (item){

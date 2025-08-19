@@ -30,6 +30,6 @@ console.log(n1);
 console.log("b",myArr);
 
 const n2 = myArr.splice(1,3)
-console.log("c",myArr);
 console.log(n2);
+console.log("c",myArr); //original array
 

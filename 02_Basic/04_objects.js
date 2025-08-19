@@ -15,7 +15,7 @@ const regularUser = {
         fullName:{
                 userName:{
                         firstName:"Ayush",
-                        lastNmae:"Jiaswal"
+                        lastNmae:"Jaiswal"
                 }
         }
 }
@@ -70,10 +70,10 @@ const course = {
 }
 // console.log(course.courseTeacher);
 
-const{courseName} = course
-const{price} = course
-console.log(courseName);
-console.log(price);
+// const{courseName} = course
+// const{price} = course
+// console.log(courseName);
+// console.log(price);
 
-const{courseTeacher:intructor} = course
-console.log(intructor);
+// const{courseTeacher:intructor} = course
+// console.log(intructor);

@@ -20,9 +20,9 @@ const hundreds = 1000000
 
 // console.log(Math);
 // console.log(Math.abs(-3));
-// console.log(Math.round(4.8));
-// console.log(Math.ceil(4.2));
-// console.log(Math.floor(5.3));
+console.log(Math.round(4.8));
+console.log(Math.ceil(4.2));
+console.log(Math.floor(5.3));
 // console.log(Math.max(32,56,6));
 // console.log(Math.min(43,87,4));
 
